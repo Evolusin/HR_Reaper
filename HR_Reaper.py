@@ -55,16 +55,15 @@ def website(data1):
 
     # time.sleep(5)
 
-    # Wyślij wniosek
+    # Submit 
     browser.find_element(By.CSS_SELECTOR,"input[value='Utwórz wniosek']").click();
 
 
-# od której daty ma liczyć 7 dni (wstawi zdalną od 14.07)
-
+# from date to count 7 days (will set remote work -> 14.07)
 first_date = "07.10.2022"
 loginwebiste()
 
-# wykonaj X powtórzeń
+# repeat X times
 powtorzen = 10
 for x in range(powtorzen):
     start_date = first_date
